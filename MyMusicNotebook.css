@@ -1,0 +1,252 @@
+/*Geneal Styles*/
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    background-color: aliceblue;
+}
+div.wrapper{
+    position: relative;
+    margin-bottom: 15rem;
+    min-height: 100%;
+}
+[class*="col-"]{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+/*Navigation Bar*/
+nav, ul{
+    background-color: black;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.navBar li{
+    list-style: none;
+    float: right;
+    display: inline-block;
+}
+.navBar li.MN{
+    float: left;
+}
+.navBar a.home{
+    display: inline-block;
+    color: whitesmoke;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+.navBar ul{
+    margin: 0;
+    padding: 0;
+}
+.navBar li a{
+    padding: 10px;
+    text-align: center;
+    display: block;
+    color: whitesmoke;
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 19px;
+}
+.navBar li a:hover{
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    font-weight: 600;
+}
+.navBar li.dropIcon a{
+    color: whitesmoke;
+    font-weight: 900;
+}
+.navBar li.dropIcon a:hover{
+    color: black;
+    font-weight: 900;
+}
+.navBar li.dropIcon{
+    display: none;
+}
+/*Navigation Bar end*/
+/*Site Banner*/
+div.banner{
+    width: 100%;
+    display: block;
+    max-height: 650px;
+}
+div.banner div.pic img.banner-pic{
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
+    opacity: 0.3;
+}
+div.banner div.bannerText{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+}
+/*Site Banner end*/
+/*mini Banner*/
+div.minibanner{
+    margin: 0;
+    background-color:black;
+    
+}
+div.minibanner h1{
+    color: whitesmoke;
+    padding: 10px;
+    font-family: 'Cabin Sketch', cursive;
+    text-align: center;
+}
+div.mmn{
+    width: 100%;
+    text-align: center;
+}
+/*Education Section*/
+/*Boxes*/
+.box1, .box2{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 25rem;
+    
+}
+.box1 a, .box2 a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.box1 a:hover, .box2 a:hover{
+    color: black;
+}
+div.captions{
+    text-align: center;
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 600;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+div img.boxpic{
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    min-height: 200px;
+    padding-bottom: 10px;
+}
+div header.sectHeader{
+    font-family: 'Cabin Sketch', cursive;
+    font-weight: 900;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+/*Guitar Exercises*/
+div.GuitarExercises{
+    background-color: #34738f;
+}
+/*Scales*/
+div.Scales{
+    background-color: #ed8a45;
+}
+div.Scales img.boxpic{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 1rem;
+}
+/*Resources*/
+div.Resources{
+    background-color: #be3e2b;
+}
+div.Resources img.boxpic{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*Practice Planners*/
+div.PracticePlanners{
+    background-color: #f6de6c;
+}
+
+/*Footer*/
+div.foot {
+    background-color: black;
+}
+div.foot h1.footHeader{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Cabin Sketch', cursive;
+}
+div.foot div.footerContent{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'Cabin Sketch', cursive;
+        
+}
+div.foots{
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.foot div.footerContent ul{
+    list-style: none;
+}
+/*Mobile Styles*/
+@media screen and (max-width:760px){/*tablet*/
+    /*nav bar mobile*/
+    .navBar ul.links li:not(:nth-child(1)){
+        display: none;
+    }
+    .navBar ul.links li.dropIcon{
+        display: block;
+        width: 3rem;
+    }
+    .navBar ul.links.moblieNav{
+        position: relative;
+    }
+    .navBar ul.links.mobileNav li{
+        display: block;
+        float: none;
+    }
+    .navBar ul.links.mobileNav li a{
+        text-align: left;
+        display: block;
+    }
+    .navBar ul.links.mobileNav li.dropIcon{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width:600px){
+    div.banner div.bannerText{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:475px){/*large mobile*/
+    div.banner div.bannerText{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:375px){/*medium mobile*/
+    
+}
+@media screen and (max-width:320px){/*small mobile*/
+    
+}
+
+
+
+
+
